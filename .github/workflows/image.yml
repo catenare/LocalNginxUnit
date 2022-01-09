@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: pkg/docker
-          file: Dockerfile.php7.4
+          file: pkg/docker/Dockerfile.php7.4
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: ghcr.io/nziswano/unit:1.26.1-php7.4
