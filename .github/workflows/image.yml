@@ -29,6 +29,6 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
-          context: Dockerfile.php7.4
+          context: pkg/docker/Dockerfile.php7.4
           push: true
           tags: ghcr.io/nziswano/unit:1.26.1-php7.4
