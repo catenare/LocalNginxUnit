@@ -20,5 +20,5 @@ jobs:
         run: cd pkg/docker/ && make build-php7.4 VERSION_php=7.4
       - name: Push Container Image
         run: |
-          docker push ghcr.io/Nziswano/unit:1.27.0-php7.4
+          docker push ghcr.io/nziswano/unit:1.26.1-php7.4
           echo "All done!"
